@@ -1,0 +1,18 @@
+#!/bin/tcsh
+
+# 1. Go to the project directory
+cd ~/Documents/D-Data/Gastric_Brain_Synchrony_Levakov
+
+# 2. Append entries to .gitignore
+
+
+# Add main BIDS folder
+echo "main_project_path/BIDS_data/" >> .gitignore
+
+# Add additional folders (examples)
+echo "main_project_path/physio/" >> .gitignore
+echo ".nii.gz" >> .gitignore
+echo ".acq" >> .gitignore
+echo "*.log" >> .gitignore
+
+echo "Updated .gitignore successfully."
