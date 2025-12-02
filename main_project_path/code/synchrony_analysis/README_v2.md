@@ -134,7 +134,7 @@ python synchrony_analysis/prepare_afni_data.py AE 1
 - `derivatives/brain_gast/mask_{subject}_run{run}strict.npz`
 - `derivatives/brain_gast/{subject}/{subject}{run}/{subject}_task-rest_run-0{run}_space-MNI_desc-preproc_bold_strict.nii.gz`
 
-**Time:** ~2-5 minutes per run
+
 
 ### Step 3: Signal Slicing (Per Subject/Run)
 
@@ -185,9 +185,9 @@ python synchrony_analysis/voxel_based_analysis_v2.py AE 1
 - `derivatives/brain_gast/{subject}/{subject}{run}/plv_permut_median_{subject}_run{run}.nii.gz`
 - `plots/brain_gast/{subject}/{subject}{run}/*.png`
 
-**Time:** ~5-15 minutes per run
 
-### Step 5: Gastric-Motion Synchrony (Optional)
+
+### Step 5: Gastric-Motion Synchrony
 
 Analyze relationship between gastric signals and head motion:
 

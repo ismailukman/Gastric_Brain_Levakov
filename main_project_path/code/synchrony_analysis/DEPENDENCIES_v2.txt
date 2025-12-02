@@ -1,11 +1,8 @@
 ================================
 SYNCHRONY ANALYSIS V2
-COMPLETE DEPENDENCIES & DATASET INFO
+DEPENDENCIES & DATASET INFO
 ================================
-
 Last Updated: December 2, 2025
-Status: ✓ READY FOR ANALYSIS
-
 ================================
 DATASET SUMMARY
 ================================

@@ -83,7 +83,7 @@ python synchrony_analysis/voxel_based_analysis_v2.py AE 1
 - Statistical maps: `plv_p_vals_*.nii.gz`, `plv_delta_*.nii.gz`
 - Plots: `plots/brain_gast/AE/AE1/*.png`
 
-**Expected time:** ~5-15 minutes per run (depends on permutations)
+**Expected time:** about 15 minutes per run (depends on permutations)
 
 ### Step 5 (Optional): Gastric-Motion Synchrony
 
