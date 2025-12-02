@@ -1,18 +1,39 @@
-#!/bin/tcsh
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# 1. Go to the project directory
-cd ~/Documents/D-Data/Gastric_Brain_Synchrony_Levakov
+# BIDS data folder
+BIDS_data/
 
-# 2. Append entries to .gitignore
+# Additional data folders
+physio/
 
+# Large neuroimaging files and derivatives
+main_project_path/derivatives/
+*.nii.gz
+*.npz
+*.npy
+*.acq
 
-# Add main BIDS folder
-echo "main_project_path/BIDS_data/" >> .gitignore
+# Log files
+*.log
 
-# Add additional folders (examples)
-echo "main_project_path/physio/" >> .gitignore
-echo ".nii.gz" >> .gitignore
-echo ".acq" >> .gitignore
-echo "*.log" >> .gitignore
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
 
-echo "Updated .gitignore successfully."
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

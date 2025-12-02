@@ -1,0 +1,159 @@
+================================================================================
+                    SYNCHRONY ANALYSIS V2 - START HERE
+================================================================================
+
+Welcome! You have successfully set up the synchrony analysis pipeline.
+
+================================================================================
+YOUR DATASET
+================================================================================
+
+✓ 15 subjects with complete data (motion + gastric)
+✓ 28 subject-runs total
+✓ egg_brain_meta_data_v2.csv contains only subjects with available data
+
+AFNI preprocessed (ready to analyze):
+  → AE (3 runs), AIM (2 runs), AlS (2 runs), AmK (2 runs), AnF (2 runs)
+
+Need brain preprocessing first:
+  → AzN, BS, DaH, DoP, EdZ, ElL, ErG, HaM, IdS, LA
+
+Note: AIM and AlM are the same subject (naming inconsistency resolved)
+
+================================================================================
+QUICK START - PROCESS YOUR FIRST SUBJECT
+================================================================================
+
+1. Install Python packages (one-time):
+   pip install numpy pandas scipy nilearn nibabel matplotlib mne scikit-learn
+
+2. Verify all files exist:
+   cd code
+   python synchrony_analysis/check_files_v2.py
+
+3. Process subject AE, run 1 (has AFNI data):
+   python synchrony_analysis/prepare_afni_data.py AE 1
+   python synchrony_analysis/signal_slicing_v2.py AE 1
+   python synchrony_analysis/voxel_based_analysis_v2.py AE 1
+
+4. Check results:
+   ls ../derivatives/brain_gast/AE/AE1/*.nii.gz
+   ls ../plots/brain_gast/AE/AE1/*.png
+
+================================================================================
+FILES IN THIS FOLDER
+================================================================================
+
+PYTHON SCRIPTS (_v2.py):
+  • check_files_v2.py              - Verify input files exist
+  • prepare_afni_data.py           - Convert AFNI to synchrony format (NEW!)
+  • egg_confounds_synchrony_v2.py  - Gastric-motion synchrony (optional)
+  • signal_slicing_v2.py           - Temporal alignment
+  • voxel_based_analysis_v2.py     - Voxel-wise PLV computation
+  • voxel_based_second_level_v2.py - Group-level analysis
+
+DOCUMENTATION:
+  • START_HERE.txt (this file)     - Quick start guide
+  • QUICKSTART_AFNI.md             - Detailed AFNI workflow
+  • README_v2.md                   - Complete user guide
+  • AFNI_WORKFLOW.md               - AFNI-specific information
+  • DEPENDENCIES_v2.txt            - Requirements checklist
+
+BATCH SCRIPT:
+  • run_synchrony_v2.sh            - Automated batch processing
+
+================================================================================
+DOCUMENTATION READING ORDER
+================================================================================
+
+1. START_HERE.txt (you are here) - Overview and quick commands
+2. DEPENDENCIES_v2.txt            - Check if you have everything needed
+3. QUICKSTART_AFNI.md             - Step-by-step AFNI workflow
+4. README_v2.md                   - Complete reference guide
+5. AFNI_WORKFLOW.md               - AFNI-specific details
+
+================================================================================
+WHAT'S DIFFERENT IN V2?
+================================================================================
+
+✓ Uses egg_brain_meta_data_v2.csv (15 subjects with complete data)
+✓ Works with .1D motion files instead of fMRIPrep TSV
+✓ Includes prepare_afni_data.py for AFNI preprocessing
+✓ All paths use main_project_path from config
+✓ Updated to handle both AFNI and fMRIPrep data
+✓ Resolved AIM/AlM naming inconsistency
+
+================================================================================
+WORKFLOW SUMMARY
+================================================================================
+
+For AFNI-preprocessed subjects (AE, AIM, AlS, AmK, AnF):
+
+  Step 1: Check files
+    python synchrony_analysis/check_files_v2.py
+
+  Step 2: Prepare AFNI data (per subject/run)
+    python synchrony_analysis/prepare_afni_data.py {subject} {run}
+
+  Step 3: Signal slicing (per subject/run)
+    python synchrony_analysis/signal_slicing_v2.py {subject} {run}
+
+  Step 4: Voxel-based analysis (per subject/run)
+    python synchrony_analysis/voxel_based_analysis_v2.py {subject} {run}
+
+  Step 5: Group analysis (after all subjects done)
+    python synchrony_analysis/voxel_based_second_level_v2.py
+
+================================================================================
+BATCH PROCESSING
+================================================================================
+
+To process all AFNI subjects at once:
+
+  cd code
+
+  for SUBJECT in AE AIM AlS AmK AnF; do
+      for RUN in 1 2 3; do
+          if grep -q "^${SUBJECT},${RUN}," dataframes/egg_brain_meta_data_v2.csv; then
+              echo "Processing ${SUBJECT} run ${RUN}..."
+              python synchrony_analysis/prepare_afni_data.py $SUBJECT $RUN
+              python synchrony_analysis/signal_slicing_v2.py $SUBJECT $RUN
+              python synchrony_analysis/voxel_based_analysis_v2.py $SUBJECT $RUN
+          fi
+      done
+  done
+
+================================================================================
+NEED HELP?
+================================================================================
+
+Common issues:
+
+1. "FileNotFoundError: file not found"
+   → Run check_files_v2.py to see which files are missing
+   → Check paths in config.py
+
+2. "AFNI file not found"
+   → Check: ls BIDS_data/soroka/sub-{subject}/anat_func/PreprocessedData/
+
+3. "Gastric signal not found"
+   → Check: ls derivatives/brain_gast/{subject}/{subject}{run}/*.npy
+
+4. "FSL_DIR not set"
+   → export FSL_DIR=/path/to/fsl
+   → Only needed for voxel_based_analysis_v2.py
+
+For more help, read:
+  - QUICKSTART_AFNI.md (troubleshooting section)
+  - DEPENDENCIES_v2.txt (requirements)
+
+================================================================================
+READY TO START?
+================================================================================
+
+Run these commands now:
+
+  cd code
+  python synchrony_analysis/check_files_v2.py
+  python synchrony_analysis/prepare_afni_data.py AE 1
+================================================================================

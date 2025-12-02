@@ -88,6 +88,7 @@ else:
 plot_trigger(trigger, action_idx, original_sample_rate, subject=subject_name,
             run=run, save_path=plot_path)
 
+
 # STEP 7: Slice recording according to MRI trigger timing
 signal_time = data.channels[0].time_index[:int(duration)]
 signal_egg = [data.channels[i].data[action_idx[0]:action_idx[1]] for i in range(num_gast)]
@@ -144,3 +145,5 @@ plot_signal(signal_time, [signal_egg_selected], 'EGG filtered',
 np.save(data_path + '/gast_data_' + subject_name + '_run' + run + clean_level + '.npy', signal_egg_selected)
 np.save(data_path + '/max_freq' + subject_name + '_run' + run + clean_level + '.npy', max_freq)
 print('Done gastric preprocessing for: ', subject_name, run)
+
+
