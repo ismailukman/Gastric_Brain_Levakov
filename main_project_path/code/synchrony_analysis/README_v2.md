@@ -6,13 +6,11 @@ Gastric-Brain Synchrony Analysis Pipeline using AFNI preprocessing and .1D motio
 
 **15 subjects, 28 runs** (egg_brain_meta_data_v2.csv)
 
-**AFNI-ready (5 subjects, 11 runs):**
+**ALL SUBJECTS AFNI-READY (15 subjects, 28 runs):**
 - AE (3 runs), AIM (2 runs), AlS (2 runs), AmK (2 runs), AnF (2 runs)
-- Can run full pipeline immediately
-
-**Need brain preprocessing (10 subjects, 17 runs):**
-- AzN, BS, DaH, DoP, EdZ, ElL, ErG, HaM, IdS, LA
-- Have motion + gastric, need fMRI preprocessing
+- AzN (2 runs), BS (2 runs), DaH (2 runs), DoP (1 run), EdZ (1 run)
+- ElL (2 runs), ErG (1 run), HaM (2 runs), IdS (2 runs), LA (2 runs)
+- ✓ All subjects have AFNI preprocessing - full pipeline ready!
 
 **Important Note - AIM/AlM Naming:**
 AIM and AlM are the **SAME SUBJECT** with inconsistent naming. Resolved by:
@@ -112,7 +110,7 @@ python synchrony_analysis/check_files_v2.py
 
 ### Step 2: Prepare AFNI Data (Per Subject/Run)
 
-**For AFNI-preprocessed subjects only (AE, AIM, AlS, AmK, AnF):**
+**For all 15 AFNI-preprocessed subjects:**
 
 This converts AFNI output to the format needed for synchrony analysis.
 
@@ -225,7 +223,7 @@ python synchrony_analysis/voxel_based_second_level_v2.py
 ```bash
 cd code
 
-for SUBJECT in AE AIM AlS AmK AnF; do
+for SUBJECT in AE AIM AlS AmK AnF AzN BS DaH DoP EdZ ElL ErG HaM IdS LA; do
     for RUN in 1 2 3; do
         if grep -q "^${SUBJECT},${RUN}," dataframes/egg_brain_meta_data_v2.csv; then
             echo "Processing ${SUBJECT} run ${RUN}..."
@@ -237,7 +235,7 @@ for SUBJECT in AE AIM AlS AmK AnF; do
     done
 done
 
-echo "All subjects processed!"
+echo "All 15 subjects processed!"
 ```
 
 ### Using the Batch Script
@@ -278,7 +276,7 @@ BIDS_data/soroka/sub-AE/anat_func/PreprocessedData/sub-AE/output_sub-AE/
 1. **Check which subjects have AFNI data:**
    ```bash
    ls BIDS_data/soroka/
-   # Output: sub-AE, sub-AIM, sub-AlS, sub-AmK, sub-AnF
+   # Output: All 15 subjects (sub-AE, sub-AIM, sub-AlS, sub-AmK, sub-AnF, sub-AzN, sub-BS, sub-DaH, sub-DoP, sub-EdZ, sub-ElL, sub-ErG, sub-HaM, sub-IdS, sub-LA)
    ```
 
 2. **Process each subject:**
@@ -293,7 +291,7 @@ BIDS_data/soroka/sub-AE/anat_func/PreprocessedData/sub-AE/output_sub-AE/
    python synchrony_analysis/voxel_based_analysis_v2.py AE 1
    ```
 
-3. **Repeat for all runs** of all 5 AFNI subjects
+3. **Repeat for all runs** of all 15 AFNI subjects
 
 ## Troubleshooting
 
@@ -401,9 +399,8 @@ For quick commands, see [START_HERE.txt](START_HERE.txt)
 
 ## Next Steps
 
-1. Process all 5 AFNI subjects (AE, AIM, AlS, AmK, AnF)
-2. Run group-level analysis
+1. Process all 15 AFNI subjects (complete dataset)
+2. Run group-level analysis with all 28 runs
 3. Examine results in `derivatives/brain_gast/`
 4. Check plots in `plots/brain_gast/`
-5. For subjects without AFNI preprocessing, run fMRI preprocessing first
 

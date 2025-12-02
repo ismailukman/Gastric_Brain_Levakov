@@ -52,13 +52,13 @@ fi
 
 if [ "$BRAIN_FILES_EXIST" = false ] && [ "$AFNI_AVAILABLE" = true ]; then
     echo ""
-    echo "AFNI preprocessing available for: AE, AIM, AlS, AmK, AnF"
+    echo "AFNI preprocessing available for: ALL 15 subjects"
     echo ""
     read -p "Do you want to prepare AFNI data now? (y/n) " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        echo "Preparing AFNI data for all 5 subjects..."
-        for SUBJECT in AE AIM AlS AmK AnF; do
+        echo "Preparing AFNI data for all 15 subjects..."
+        for SUBJECT in AE AIM AlS AmK AnF AzN BS DaH DoP EdZ ElL ErG HaM IdS LA; do
             while IFS=, read -r sub run rest; do
                 if [ "$sub" == "subject" ]; then continue; fi
                 if [ "$sub" == "$SUBJECT" ]; then
@@ -67,7 +67,7 @@ if [ "$BRAIN_FILES_EXIST" = false ] && [ "$AFNI_AVAILABLE" = true ]; then
                 fi
             done < dataframes/egg_brain_meta_data_v2.csv
         done
-        echo "✓ AFNI data preparation completed!"
+        echo "✓ AFNI data preparation completed for all 15 subjects!"
         BRAIN_FILES_EXIST=true
     else
         echo "Skipping AFNI data preparation."

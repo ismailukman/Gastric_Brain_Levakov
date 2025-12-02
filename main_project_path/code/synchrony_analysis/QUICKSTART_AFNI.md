@@ -3,7 +3,8 @@
 Simplified guide to run gastric-brain synchrony analysis with AFNI preprocessed data.
 
 **Your Dataset:** 15 subjects (28 runs)
-**AFNI-ready:** 5 subjects (AE, AIM, AlS, AmK, AnF) - 11 runs total
+**AFNI-ready:** ALL 15 subjects - 28 runs total
+**Status:** ✓ All subjects ready for analysis!
 
 ## Prerequisites
 
@@ -58,7 +59,6 @@ python synchrony_analysis/prepare_afni_data.py AE 1
 - Saves to `derivatives/brain_gast/AE/AE1/func_filtered_*.npz`
 - Creates brain mask: `derivatives/brain_gast/mask_*.npz`
 
-**Expected time:** ~2-5 minutes per run
 
 ### Step 3: Signal Slicing
 
@@ -115,7 +115,7 @@ python synchrony_analysis/prepare_afni_data.py AE 2
 python synchrony_analysis/signal_slicing_v2.py AE 2
 python synchrony_analysis/voxel_based_analysis_v2.py AE 2
 
-# Repeat for other subjects: AIM, AlS, AmK, AnF
+# Repeat for all 15 subjects: AE, AIM, AlS, AmK, AnF, AzN, BS, DaH, DoP, EdZ, ElL, ErG, HaM, IdS, LA
 ```
 
 ### Option B: Batch Script
@@ -129,7 +129,8 @@ cd code
 cat > process_afni_subjects.sh << 'EOF'
 #!/bin/bash
 
-SUBJECTS="AE AIM AlS AmK AnF"
+# All 15 subjects with AFNI preprocessing
+SUBJECTS="AE AIM AlS AmK AnF AzN BS DaH DoP EdZ ElL ErG HaM IdS LA"
 
 for SUBJECT in $SUBJECTS; do
     for RUN in 1 2 3; do
@@ -154,7 +155,7 @@ for SUBJECT in $SUBJECTS; do
 done
 
 echo ""
-echo "All subjects processed!"
+echo "All 15 subjects processed!"
 EOF
 
 # Make executable and run
@@ -262,8 +263,8 @@ open plots/brain_gast/AE/AE1/thres95_plvs_empirical_map.png
 
 ## Next Steps
 
-1. Process all 5 AFNI subjects (AE, AIM, AlS, AmK, AnF)
-2. Run group-level analysis
+1. Process all 15 AFNI subjects (complete dataset)
+2. Run group-level analysis with all 28 runs
 3. Examine results in `derivatives/brain_gast/`
 4. Check plots in `plots/brain_gast/`
 

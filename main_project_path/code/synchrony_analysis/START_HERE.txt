@@ -8,15 +8,15 @@ Welcome! You have successfully set up the synchrony analysis pipeline.
 YOUR DATASET
 ================================================================================
 
-✓ 15 subjects with complete data (motion + gastric)
+✓ 15 subjects with complete data (motion + gastric + AFNI preprocessing)
 ✓ 28 subject-runs total
+✓ ALL subjects have AFNI preprocessing - ready to analyze!
 ✓ egg_brain_meta_data_v2.csv contains only subjects with available data
 
-AFNI preprocessed (ready to analyze):
+All 15 AFNI-preprocessed subjects:
   → AE (3 runs), AIM (2 runs), AlS (2 runs), AmK (2 runs), AnF (2 runs)
-
-Need brain preprocessing first:
-  → AzN, BS, DaH, DoP, EdZ, ElL, ErG, HaM, IdS, LA
+  → AzN (2 runs), BS (2 runs), DaH (2 runs), DoP (1 run), EdZ (1 run)
+  → ElL (2 runs), ErG (1 run), HaM (2 runs), IdS (2 runs), LA (2 runs)
 
 Note: AIM and AlM are the same subject (naming inconsistency resolved)
 
@@ -87,7 +87,7 @@ WHAT'S DIFFERENT IN V2?
 WORKFLOW SUMMARY
 ================================================================================
 
-For AFNI-preprocessed subjects (AE, AIM, AlS, AmK, AnF):
+For all 15 AFNI-preprocessed subjects:
 
   Step 1: Check files
     python synchrony_analysis/check_files_v2.py
@@ -108,11 +108,11 @@ For AFNI-preprocessed subjects (AE, AIM, AlS, AmK, AnF):
 BATCH PROCESSING
 ================================================================================
 
-To process all AFNI subjects at once:
+To process all 15 AFNI subjects at once:
 
   cd code
 
-  for SUBJECT in AE AIM AlS AmK AnF; do
+  for SUBJECT in AE AIM AlS AmK AnF AzN BS DaH DoP EdZ ElL ErG HaM IdS LA; do
       for RUN in 1 2 3; do
           if grep -q "^${SUBJECT},${RUN}," dataframes/egg_brain_meta_data_v2.csv; then
               echo "Processing ${SUBJECT} run ${RUN}..."

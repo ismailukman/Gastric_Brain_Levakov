@@ -13,14 +13,12 @@ DATASET SUMMARY
 Total: 15 subjects, 28 subject-runs
 All files verified: check_files_v2.py ✓ PASSED
 
-AFNI-ready (5 subjects, 11 runs - can process immediately):
+ALL SUBJECTS AFNI-READY (15 subjects, 28 runs - can process immediately):
   1. AE (runs 1,2,3)
   2. AIM (runs 1,2) - Note: Same subject as "AlM" in gastric data
   3. AlS (runs 1,2)
   4. AmK (runs 1,2)
   5. AnF (runs 1,2)
-
-Need brain preprocessing first (10 subjects, 17 runs):
   6. AzN (runs 1,2)
   7. BS (runs 1,2)
   8. DaH (runs 1,2)
@@ -114,13 +112,13 @@ For EACH subject and run, you need:
    Note: 15 subjects, 28 runs (AIM/AlM resolved to AIM)
 
 ================================
-AFNI PREPROCESSED DATA (5 subjects)
+AFNI PREPROCESSED DATA (ALL 15 SUBJECTS)
 ================================
 
 Location: BIDS_data/soroka/sub-{subject}/anat_func/PreprocessedData/
-Available for: AE, AIM, AlS, AmK, AnF
+Available for: ALL 15 subjects (AE, AIM, AlS, AmK, AnF, AzN, BS, DaH, DoP, EdZ, ElL, ErG, HaM, IdS, LA)
 
-For these subjects, use:
+For each subject/run, use:
   python synchrony_analysis/prepare_afni_data.py {subject} {run}
 
 This creates the brain signal files needed for synchrony analysis.
@@ -177,7 +175,7 @@ Step 1: Check files ✓ READY
 Step 2: Gastric-motion analysis (optional) ✓ READY
   python synchrony_analysis/egg_confounds_synchrony_v2.py
 
-Step 3: Prepare AFNI data (for AE, AIM, AlS, AmK, AnF) ✓ READY
+Step 3: Prepare AFNI data (for all 15 subjects) ✓ READY
   python synchrony_analysis/prepare_afni_data.py {subject} {run}
 
 Step 4: Signal slicing ⚠ NEEDS STEP 3 FIRST
