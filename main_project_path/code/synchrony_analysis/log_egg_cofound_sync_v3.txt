@@ -1,0 +1,360 @@
+(brain_gut) LT-Lukman-2:code ismaila$ 
+(brain_gut) LT-Lukman-2:code ismaila$ python synchrony_analysis/egg_confounds_synchrony_v3.py
+Processing 28 subject-run pairs...
+Loading all gastric signals for mismatch null distribution...
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.69 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded LA run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 16.28 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded LA run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.93 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded BS run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 16.07 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded BS run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.98 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AE run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.86 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AE run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.86 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AE run 3
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.86 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AIM run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.94 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AIM run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.86 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded EdZ run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.77 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded HaM run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 16.00 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded HaM run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.93 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded ElL run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.93 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded ElL run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 16.04 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded DaH run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 16.09 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded DaH run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 16.06 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AmK run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.02 Hz is only 15.92 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AmK run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 16.01 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded IdS run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.97 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded IdS run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.89 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded DoP run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.04 Hz is only 15.52 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AlS run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.02 Hz is only 16.16 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AlS run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.02 Hz is only 16.21 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AnF run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.02 Hz is only 16.02 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AnF run 2
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 15.88 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded ErG run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 16.04 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AzN run 1
+/Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/synchrony_analysis/egg_confounds_synchrony_v3.py:75: RuntimeWarning: Attenuation at stop frequency 0.03 Hz is only 16.04 dB. Increase filter_length for higher attenuation.
+  confound_filtered = filter_data(
+✓ Loaded AzN run 2
+
+Successfully loaded 28 subject-run pairs
+
+Computing PLV with mismatch null distribution...
+
+Processing LA run 1 (1/28)...
+  trans_x: PLV=0.0607, p=0.8889
+  trans_y: PLV=0.2203, p=0.0370
+  trans_z: PLV=0.0713, p=0.8519
+  rot_x: PLV=0.3012, p=0.0741
+  rot_y: PLV=0.2387, p=0.0370
+  rot_z: PLV=0.2789, p=0.0741
+
+Processing LA run 2 (2/28)...
+  trans_x: PLV=0.0552, p=0.8519
+  trans_y: PLV=0.0980, p=0.6667
+  trans_z: PLV=0.2563, p=0.0370
+  rot_x: PLV=0.0079, p=1.0000
+  rot_y: PLV=0.1744, p=0.2963
+  rot_z: PLV=0.0460, p=0.9259
+
+Processing BS run 1 (3/28)...
+  trans_x: PLV=0.1501, p=0.4444
+  trans_y: PLV=0.0717, p=0.8889
+  trans_z: PLV=0.1005, p=0.6296
+  rot_x: PLV=0.0580, p=0.8519
+  rot_y: PLV=0.2910, p=0.1852
+  rot_z: PLV=0.1759, p=0.4074
+
+Processing BS run 2 (4/28)...
+  trans_x: PLV=0.3035, p=0.0000
+  trans_y: PLV=0.4462, p=0.0000
+  trans_z: PLV=0.4967, p=0.0000
+  rot_x: PLV=0.0723, p=0.8889
+  rot_y: PLV=0.1441, p=0.4444
+  rot_z: PLV=0.2151, p=0.3704
+
+Processing AE run 1 (5/28)...
+  trans_x: PLV=0.3489, p=0.0370
+  trans_y: PLV=0.0913, p=0.8148
+  trans_z: PLV=0.2761, p=0.1852
+  rot_x: PLV=0.3285, p=0.0370
+  rot_y: PLV=0.3719, p=0.0000
+  rot_z: PLV=0.0937, p=0.8889
+
+Processing AE run 2 (6/28)...
+  trans_x: PLV=0.0857, p=0.8148
+  trans_y: PLV=0.1443, p=0.5926
+  trans_z: PLV=0.3503, p=0.1852
+  rot_x: PLV=0.0606, p=0.9259
+  rot_y: PLV=0.2320, p=0.3704
+  rot_z: PLV=0.2655, p=0.2963
+
+Processing AE run 3 (7/28)...
+  trans_x: PLV=0.1604, p=0.8148
+  trans_y: PLV=0.1256, p=0.7407
+  trans_z: PLV=0.1371, p=0.8148
+  rot_x: PLV=0.2872, p=0.2222
+  rot_y: PLV=0.2652, p=0.1481
+  rot_z: PLV=0.1293, p=0.6667
+
+Processing AIM run 1 (8/28)...
+  trans_x: PLV=0.2812, p=0.0000
+  trans_y: PLV=0.3023, p=0.0000
+  trans_z: PLV=0.2501, p=0.1481
+  rot_x: PLV=0.3580, p=0.0741
+  rot_y: PLV=0.2054, p=0.1481
+  rot_z: PLV=0.2072, p=0.2963
+
+Processing AIM run 2 (9/28)...
+  trans_x: PLV=0.2492, p=0.2593
+  trans_y: PLV=0.2257, p=0.1111
+  trans_z: PLV=0.0537, p=0.8889
+  rot_x: PLV=0.2329, p=0.2593
+  rot_y: PLV=0.3117, p=0.1481
+  rot_z: PLV=0.3116, p=0.0370
+
+Processing EdZ run 1 (10/28)...
+  trans_x: PLV=0.1608, p=0.2593
+  trans_y: PLV=0.2024, p=0.2222
+  trans_z: PLV=0.1082, p=0.6296
+  rot_x: PLV=0.1000, p=0.6667
+  rot_y: PLV=0.1259, p=0.5185
+  rot_z: PLV=0.3166, p=0.1111
+
+Processing HaM run 1 (11/28)...
+  trans_x: PLV=0.0802, p=0.8519
+  trans_y: PLV=0.2372, p=0.0741
+  trans_z: PLV=0.1296, p=0.5185
+  rot_x: PLV=0.4035, p=0.0000
+  rot_y: PLV=0.0813, p=0.8889
+  rot_z: PLV=0.2249, p=0.1852
+
+Processing HaM run 2 (12/28)...
+  trans_x: PLV=0.1717, p=0.4074
+  trans_y: PLV=0.0836, p=0.7778
+  trans_z: PLV=0.1083, p=0.4815
+  rot_x: PLV=0.1389, p=0.6296
+  rot_y: PLV=0.1403, p=0.4815
+  rot_z: PLV=0.2444, p=0.1111
+
+Processing ElL run 1 (13/28)...
+  trans_x: PLV=0.1371, p=0.5556
+  trans_y: PLV=0.1372, p=0.5556
+  trans_z: PLV=0.2485, p=0.1852
+  rot_x: PLV=0.2999, p=0.0370
+  rot_y: PLV=0.4623, p=0.0000
+  rot_z: PLV=0.1739, p=0.4815
+
+Processing ElL run 2 (14/28)...
+  trans_x: PLV=0.0424, p=1.0000
+  trans_y: PLV=0.3477, p=0.0741
+  trans_z: PLV=0.0286, p=0.9630
+  rot_x: PLV=0.0637, p=0.7778
+  rot_y: PLV=0.1743, p=0.2963
+  rot_z: PLV=0.1496, p=0.3704
+
+Processing DaH run 1 (15/28)...
+  trans_x: PLV=0.3335, p=0.0370
+  trans_y: PLV=0.2342, p=0.1852
+  trans_z: PLV=0.1762, p=0.3333
+  rot_x: PLV=0.1651, p=0.5556
+  rot_y: PLV=0.1088, p=0.5926
+  rot_z: PLV=0.0900, p=0.8519
+
+Processing DaH run 2 (16/28)...
+  trans_x: PLV=0.1592, p=0.3704
+  trans_y: PLV=0.2146, p=0.1481
+  trans_z: PLV=0.2770, p=0.1111
+  rot_x: PLV=0.2841, p=0.0370
+  rot_y: PLV=0.1186, p=0.7778
+  rot_z: PLV=0.2526, p=0.0370
+
+Processing AmK run 1 (17/28)...
+  trans_x: PLV=0.2481, p=0.0741
+  trans_y: PLV=0.2146, p=0.2963
+  trans_z: PLV=0.1286, p=0.7778
+  rot_x: PLV=0.1736, p=0.4815
+  rot_y: PLV=0.1019, p=0.6667
+  rot_z: PLV=0.2309, p=0.0741
+
+Processing AmK run 2 (18/28)...
+  trans_x: PLV=0.1931, p=0.2963
+  trans_y: PLV=0.1246, p=0.6667
+  trans_z: PLV=0.1956, p=0.1481
+  rot_x: PLV=0.4602, p=0.0000
+  rot_y: PLV=0.2475, p=0.0741
+  rot_z: PLV=0.2438, p=0.1852
+
+Processing IdS run 1 (19/28)...
+  trans_x: PLV=0.2411, p=0.3333
+  trans_y: PLV=0.0400, p=0.9630
+  trans_z: PLV=0.2206, p=0.2222
+  rot_x: PLV=0.1212, p=0.5185
+  rot_y: PLV=0.1712, p=0.3704
+  rot_z: PLV=0.3601, p=0.0000
+
+Processing IdS run 2 (20/28)...
+  trans_x: PLV=0.1347, p=0.5926
+  trans_y: PLV=0.2103, p=0.2963
+  trans_z: PLV=0.1404, p=0.4815
+  rot_x: PLV=0.2293, p=0.1481
+  rot_y: PLV=0.3657, p=0.0000
+  rot_z: PLV=0.1112, p=0.7037
+
+Processing DoP run 1 (21/28)...
+  trans_x: PLV=0.2560, p=0.1111
+  trans_y: PLV=0.1397, p=0.5556
+  trans_z: PLV=0.0898, p=0.8519
+  rot_x: PLV=0.1042, p=0.6667
+  rot_y: PLV=0.1534, p=0.7037
+  rot_z: PLV=0.0722, p=0.9259
+
+Processing AlS run 1 (22/28)...
+  trans_x: PLV=0.3578, p=0.0370
+  trans_y: PLV=0.4588, p=0.0000
+  trans_z: PLV=0.0651, p=0.9259
+  rot_x: PLV=0.3412, p=0.0000
+  rot_y: PLV=0.3301, p=0.0370
+  rot_z: PLV=0.4933, p=0.0000
+
+Processing AlS run 2 (23/28)...
+  trans_x: PLV=0.3246, p=0.0000
+  trans_y: PLV=0.5424, p=0.0000
+  trans_z: PLV=0.2139, p=0.0370
+  rot_x: PLV=0.5432, p=0.0000
+  rot_y: PLV=0.3674, p=0.0000
+  rot_z: PLV=0.5425, p=0.0000
+
+Processing AnF run 1 (24/28)...
+  trans_x: PLV=0.1270, p=0.7037
+  trans_y: PLV=0.1970, p=0.3333
+  trans_z: PLV=0.1075, p=0.6667
+  rot_x: PLV=0.1573, p=0.4444
+  rot_y: PLV=0.2702, p=0.1111
+  rot_z: PLV=0.0628, p=0.9630
+
+Processing AnF run 2 (25/28)...
+  trans_x: PLV=0.1139, p=0.5185
+  trans_y: PLV=0.3645, p=0.0000
+  trans_z: PLV=0.0284, p=0.9630
+  rot_x: PLV=0.1846, p=0.1481
+  rot_y: PLV=0.1844, p=0.2963
+  rot_z: PLV=0.0691, p=0.8889
+
+Processing ErG run 1 (26/28)...
+  trans_x: PLV=0.1605, p=0.2593
+  trans_y: PLV=0.2362, p=0.1852
+  trans_z: PLV=0.1353, p=0.3704
+  rot_x: PLV=0.3160, p=0.0000
+  rot_y: PLV=0.1912, p=0.2593
+  rot_z: PLV=0.3059, p=0.0741
+
+Processing AzN run 1 (27/28)...
+  trans_x: PLV=0.1595, p=0.4815
+  trans_y: PLV=0.2753, p=0.2222
+  trans_z: PLV=0.1184, p=0.6296
+  rot_x: PLV=0.0632, p=0.8519
+  rot_y: PLV=0.0396, p=0.8889
+  rot_z: PLV=0.0624, p=0.9630
+
+Processing AzN run 2 (28/28)...
+  trans_x: PLV=0.0986, p=0.7407
+  trans_y: PLV=0.1023, p=0.7778
+  trans_z: PLV=0.1769, p=0.2593
+  rot_x: PLV=0.0730, p=0.7407
+  rot_y: PLV=0.4264, p=0.0370
+  rot_z: PLV=0.0895, p=0.7778
+
+Applying multiple comparison correction...
+
+Saving results...
+
+======================================================================
+RESULTS SUMMARY
+======================================================================
+
+Total tests performed: 168
+  Subject-runs: 28
+  Motion parameters per run: 6
+  Total comparisons: 28 × 6 = 168
+
+Significant findings:
+  Uncorrected (p < 0.05): 35 (20.8%)
+  FDR-corrected (q < 0.05): 21 (12.5%)
+  Bonferroni-corrected (p < 0.05): 21 (12.5%)
+
+PLV statistics:
+  Empirical PLV range: [0.0079, 0.5432]
+  Empirical PLV mean: 0.2025 ± 0.1168
+  Null PLV mean: 0.1591 ± 0.0239
+
+Top 10 most significant findings (by FDR-corrected p-value):
+subject  run motion_param  plv_empirical  p_value  p_fdr
+     BS    2      trans_x       0.303538      0.0    0.0
+     BS    2      trans_y       0.446161      0.0    0.0
+     BS    2      trans_z       0.496728      0.0    0.0
+     AE    1        rot_y       0.371902      0.0    0.0
+    AIM    1      trans_x       0.281173      0.0    0.0
+    AIM    1      trans_y       0.302329      0.0    0.0
+    HaM    1        rot_x       0.403525      0.0    0.0
+    ElL    1        rot_y       0.462251      0.0    0.0
+    AmK    2        rot_x       0.460189      0.0    0.0
+    IdS    1        rot_z       0.360058      0.0    0.0
+
+======================================================================
+
+Results saved:
+  PLV with statistics => /Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/dataframes/plvs_egg_w_motion_v3.csv
+  Motion summary      => /Users/ismaila/Documents/D-Data/GastricfMRI_g5_g6/Gastric_Brain_Synchrony_Levakov/main_project_path/code/dataframes/motion_summary_v3.csv
+
+Done!
