@@ -212,6 +212,7 @@ python synchrony_analysis/voxel_based_second_level_v2.py
 - All individual subjects processed
 - FSL installed and FSLDIR set
 
+
 **Output:**
 - Group average maps in `derivatives/brain_gast/`
 - Statistical results in `derivatives/brain_gast/fsl_randomize/`
